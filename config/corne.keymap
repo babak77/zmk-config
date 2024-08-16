@@ -47,10 +47,10 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&trans            &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
-&kp LEFT_SHIFT    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5            &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
-&kp LEFT_CONTROL  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0            &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp RCTRL
-                                    &trans    &trans    &tp LALT SPACE    &kp ENTER  &kp BSPC   &trans
+&trans            &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY    &kp LPAR  &kp RPAR  &kp BSLH
+&kp LEFT_SHIFT    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &kp GRAVE          &kp LBKT  &kp RBKT  &kp PIPE
+&kp LEFT_CONTROL  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &kp TILDE          &kp LBRC  &kp RBRC  &kp RCTRL
+                                    &trans    &trans    &trans       &kp ENTER  &kp BSPC   &kp RIGHT_COMMAND
             >;
         };
 
@@ -62,10 +62,19 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4            &kp F5                  &kp F6    &kp F7        &kp F8        &kp F9            &kp F10       &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT         &bt BT_SEL 0  &bt BT_CLR_ALL
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9            &kp N0                  &kp DEL   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE  &bt BT_SEL 1  &trans
-                                    &trans        &kp LS(LEFT_ALT)  &kp LS(LEFT_COMMAND)    &trans    &trans        &trans
+&kp LS(LG(Z))  &kp F1        &kp F2        &kp F3        &kp F4             &kp F5       &kp F6     &kp F7     &kp F8                &kp F9          &kp F10        &kp LC(BACKSLASH)
+&kp LG(Z)      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp N5       &kp LEFT   &kp DOWN   &kp UP                &kp RIGHT       &kp LG(LS(L))  &kp LG(SPACE)
+&kp LG(S)      &kp NUMBER_6  &kp N7        &kp N8        &kp N9             &kp N0       &kp LG(X)  &kp LG(V)  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))  &kp DEL        &kp LC(LG(Q))
+                                           &mo 3         &kp LS(LA(LG(V)))  &kp LG(C)    &trans     &trans     &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans      &trans        &trans        &trans            &trans             &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans            &trans             &trans             &trans  &trans  &trans
             >;
         };
     };
