@@ -62,10 +62,10 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&kp LC(LG(Q))  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5         &kp NUMBER_6          &kp NUMBER_7          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp DEL
-&kp LS(LG(Z))  &kp LG(A)     &kp LG(S)     &kp DEL       &kp LG(F)          &kp LS(LG(L))        &kp LEFT              &kp DOWN              &kp UP        &kp RIGHT     &kp RIGHT_ALT  &trans
-&kp LC(A)      &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)          &kp LS(LA(LG(V)))    &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))  &trans        &trans        &trans         &trans
-                                           &mo 3         &kp LC(BACKSLASH)  &kp LG(SPACE)        &trans                &trans                &trans
+&kp LC(LG(Q))     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5         &kp NUMBER_6          &kp NUMBER_7          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp DEL
+&kp LS(LG(Z))     &kp LG(A)     &kp LG(S)     &kp DEL       &kp LG(F)          &kp LS(LG(L))        &kp LEFT              &kp DOWN              &kp UP        &kp RIGHT     &kp RIGHT_ALT  &trans
+&kp LC(LEFT_ALT)  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)          &kp LS(LA(LG(V)))    &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))  &trans        &trans        &trans         &trans
+                                              &mo 3         &kp LC(BACKSLASH)  &kp LG(SPACE)        &trans                &trans                &trans
             >;
         };
 
