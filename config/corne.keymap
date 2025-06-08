@@ -19,6 +19,17 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
+        };
     };
 
     keymap {
@@ -33,7 +44,7 @@
 
             bindings = <
 &kp TAB           &kp Q  &kp W               &kp E             &kp R                           &kp T        &kp Y      &kp U                            &kp I            &kp O                &kp P     &kp ESC
-&kp LEFT_SHIFT    &kp A  &tp LEFT_CONTROL S  &tp LEFT_ALT D    &tp LS(LA(LC(LEFT_COMMAND))) F  &kp G        &kp H      &tp LS(LA(LC(RIGHT_COMMAND))) J  &tp RIGHT_ALT K  &tp RIGHT_CONTROL L  &kp SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp A  &hm LEFT_CONTROL S  &hm LEFT_ALT D    &hm LS(LA(LC(LEFT_COMMAND))) F  &kp G        &kp H      &tp LS(LA(LC(RIGHT_COMMAND))) J  &tp RIGHT_ALT K  &tp RIGHT_CONTROL L  &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X               &kp C             &kp V                           &kp B        &kp N      &kp M                            &kp COMMA        &kp DOT              &kp FSLH  &kp RIGHT_SHIFT
                                              &kp LEFT_COMMAND  &mo 1                           &kp SPACE    &kp ENTER  &kp BSPC                         &mo 2
             >;
